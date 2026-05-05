@@ -22,6 +22,8 @@ FROM node:20-alpine
 LABEL maintainer="Upstream Pulse Contributors"
 LABEL description="Upstream Pulse Backend API & Worker"
 
+RUN apk upgrade --no-cache
+
 RUN addgroup -g 1001 -S appgroup && \
     adduser -u 1001 -S appuser -G appgroup
 
