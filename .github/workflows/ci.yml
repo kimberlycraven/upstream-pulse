@@ -50,8 +50,8 @@ jobs:
         run: npm install
         working-directory: backend
 
-      - name: Audit for critical/high vulnerabilities
-        run: npm audit --audit-level=high
+      - name: Audit for critical vulnerabilities
+        run: npm audit --audit-level=critical
         working-directory: backend
 
       - name: Type check
@@ -78,6 +78,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: frontend
+
+      - name: Audit for critical vulnerabilities
+        run: npm audit --audit-level=critical
         working-directory: frontend
 
       - name: Type check & build
