@@ -21,6 +21,6 @@ patches:
 
 images:
 - name: quay.io/org-pulse/upstream-pulse-backend
-  newTag: e601ceb
+  newTag: 27a450d
 - name: quay.io/org-pulse/upstream-pulse-frontend
-  newTag: e601ceb
+  newTag: 27a450d
